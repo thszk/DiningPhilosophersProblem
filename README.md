@@ -17,4 +17,4 @@ For convenience the philosopher's state last between 2 and 5 seconds.
 
 ### Contribution
 
-Thanks @maqdo for the emoji idea and helps in debugging.
+Thanks [@maqdo](https://github.com/maqdo) for the emoji idea and helps in debugging.
