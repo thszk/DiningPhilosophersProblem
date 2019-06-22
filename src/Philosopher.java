@@ -21,8 +21,8 @@ public class Philosopher extends Thread {
     private void think() {
         try {
             this.state = THINKING;
-            System.out.println("Philosopher #" + id + " THINKING");
-            Thread.sleep((int)(2000+Math.random() * 5000));
+            System.out.println("Philosopher #" + id + " THINKING \uD83E\uDD14");
+            Thread.sleep(2000+ (int)(Math.random() * ((5000 - 2000) + 1))); // wait between 2 and 5 seconds
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -31,44 +31,58 @@ public class Philosopher extends Thread {
     private void hungry() {
         try {
             this.state = HUNGRY;
-            System.out.println("Philosopher #" + id + " HUNGRY");
-            Thread.sleep((int)(2000+Math.random() * 5000));
+            System.out.println("Philosopher #" + id + " HUNGRY \uD83D\uDE0B");
+            Thread.sleep(2000+ (int)(Math.random() * ((5000 - 2000) + 1)));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     private boolean takesFork() {
-        // right
-        if ( fork[(id+1)%fork.length] ) {
-            fork[(id+1)%fork.length] = false;
-            // left
-            if ( fork[id] ) {
-                fork[id] = false;
-                System.out.println("Philosopher #" + id + " takes the fork");
-                return true;
+        try {
+            // right
+            if (fork[(id + 1) % fork.length]) {
+                fork[(id + 1) % fork.length] = false;
+                System.out.println("Philosopher #" + id + " takes the right fork");
+                Thread.sleep(1000);
+                // left
+                if (fork[id]) {
+                    fork[id] = false;
+                    System.out.println("Philosopher #" + id + " takes the left fork");
+                    Thread.sleep(1000);
+                    return true;
+                } else {
+                    System.out.println("Philosopher #" + id + " release the right fork, can't reach it the left one \uD83D\uDE20");
+                    fork[(id + 1) % fork.length] = true;
+                }
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
-        fork[(id+1)%fork.length] = true;
         return false;
     }
 
     private void eat() {
         try {
             this.state = EATING;
-            System.out.println("Philosopher #" + id + " eating");
-            Thread.sleep((int)(2000+Math.random() * 5000));
+            System.out.println("Philosopher #" + id + " EATING \uD83C\uDF74");
+            Thread.sleep(2000+ (int)(Math.random() * ((5000 - 2000) + 1)));
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
     private void releaseFork() {
-        // right
-        fork[(id+1)%fork.length] = true;
-        // left
-        fork[id] = true;
-        System.out.println("Philosopher #" + id + " release the fork");
+        try {
+            // right
+            fork[(id + 1) % fork.length] = true;
+            System.out.println("Philosopher #" + id + " release the right fork");
+            // left
+            fork[id] = true;
+            System.out.println("Philosopher #" + id + " release the left fork");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
@@ -78,10 +92,9 @@ public class Philosopher extends Thread {
                 think();
                 hungry();
                 semaphore.acquire();
-                while (!takesFork()) {  }
+                while ( !takesFork() ) { Thread.sleep(2000);  }
                 eat();
                 releaseFork();
-                System.out.println("Philosopher #" + id + " exiting");
                 semaphore.release();
             } catch (InterruptedException error) {
                 error.printStackTrace();

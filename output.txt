@@ -1,0 +1,131 @@
+Number of philosophers at diner: 
+---------------DINING---------------
+Philosopher #0 THINKING 🤔
+Philosopher #1 THINKING 🤔
+Philosopher #4 THINKING 🤔
+Philosopher #3 THINKING 🤔
+Philosopher #2 THINKING 🤔
+Philosopher #2 HUNGRY 😋
+Philosopher #1 HUNGRY 😋
+Philosopher #3 HUNGRY 😋
+Philosopher #0 HUNGRY 😋
+Philosopher #4 HUNGRY 😋
+Philosopher #2 takes the right fork
+Philosopher #2 takes the left fork
+Philosopher #2 EATING 🍴
+Philosopher #2 release the right fork
+Philosopher #2 release the left fork
+Philosopher #2 THINKING 🤔
+Philosopher #3 takes the right fork
+Philosopher #1 takes the right fork
+Philosopher #3 takes the left fork
+Philosopher #1 takes the left fork
+Philosopher #3 EATING 🍴
+Philosopher #1 EATING 🍴
+Philosopher #2 HUNGRY 😋
+Philosopher #3 release the right fork
+Philosopher #3 release the left fork
+Philosopher #3 THINKING 🤔
+Philosopher #1 release the right fork
+Philosopher #1 release the left fork
+Philosopher #1 THINKING 🤔
+Philosopher #4 takes the right fork
+Philosopher #0 takes the right fork
+Philosopher #4 takes the left fork
+Philosopher #0 release the right fork, can't reach it the left one 😠
+Philosopher #4 EATING 🍴
+Philosopher #3 HUNGRY 😋
+Philosopher #1 HUNGRY 😋
+Philosopher #0 takes the right fork
+Philosopher #4 release the right fork
+Philosopher #4 release the left fork
+Philosopher #4 THINKING 🤔
+Philosopher #2 takes the right fork
+Philosopher #0 takes the left fork
+Philosopher #2 takes the left fork
+Philosopher #0 EATING 🍴
+Philosopher #2 EATING 🍴
+Philosopher #4 HUNGRY 😋
+Philosopher #0 release the right fork
+Philosopher #0 release the left fork
+Philosopher #0 THINKING 🤔
+Philosopher #3 takes the right fork
+Philosopher #2 release the right fork
+Philosopher #2 release the left fork
+Philosopher #2 THINKING 🤔
+Philosopher #1 takes the right fork
+Philosopher #3 takes the left fork
+Philosopher #1 takes the left fork
+Philosopher #3 EATING 🍴
+Philosopher #0 HUNGRY 😋
+Philosopher #1 EATING 🍴
+Philosopher #3 release the right fork
+Philosopher #3 release the left fork
+Philosopher #3 THINKING 🤔
+Philosopher #4 takes the right fork
+Philosopher #2 HUNGRY 😋
+Philosopher #4 takes the left fork
+Philosopher #1 release the right fork
+Philosopher #1 release the left fork
+Philosopher #1 THINKING 🤔
+Philosopher #4 EATING 🍴
+Philosopher #0 takes the right fork
+Philosopher #3 HUNGRY 😋
+Philosopher #0 release the right fork, can't reach it the left one 😠
+Philosopher #1 HUNGRY 😋
+Philosopher #0 takes the right fork
+Philosopher #4 release the right fork
+Philosopher #4 release the left fork
+Philosopher #4 THINKING 🤔
+Philosopher #2 takes the right fork
+Philosopher #0 takes the left fork
+Philosopher #2 takes the left fork
+Philosopher #0 EATING 🍴
+Philosopher #2 EATING 🍴
+Philosopher #4 HUNGRY 😋
+Philosopher #0 release the right fork
+Philosopher #0 release the left fork
+Philosopher #0 THINKING 🤔
+Philosopher #3 takes the right fork
+Philosopher #2 release the right fork
+Philosopher #2 release the left fork
+Philosopher #2 THINKING 🤔
+Philosopher #1 takes the right fork
+Philosopher #3 takes the left fork
+Philosopher #1 takes the left fork
+Philosopher #3 EATING 🍴
+Philosopher #1 EATING 🍴
+Philosopher #2 HUNGRY 😋
+Philosopher #0 HUNGRY 😋
+Philosopher #1 release the right fork
+Philosopher #1 release the left fork
+Philosopher #1 THINKING 🤔
+Philosopher #4 takes the right fork
+Philosopher #4 release the right fork, can't reach it the left one 😠
+Philosopher #3 release the right fork
+Philosopher #3 release the left fork
+Philosopher #3 THINKING 🤔
+Philosopher #1 HUNGRY 😋
+Philosopher #2 takes the right fork
+Philosopher #4 takes the right fork
+Philosopher #2 takes the left fork
+Philosopher #4 takes the left fork
+Philosopher #2 EATING 🍴
+Philosopher #4 EATING 🍴
+Philosopher #3 HUNGRY 😋
+Philosopher #2 release the right fork
+Philosopher #2 release the left fork
+Philosopher #2 THINKING 🤔
+Philosopher #0 takes the right fork
+Philosopher #0 release the right fork, can't reach it the left one 😠
+Philosopher #0 takes the right fork
+Philosopher #2 HUNGRY 😋
+Philosopher #4 release the right fork
+Philosopher #4 release the left fork
+Philosopher #4 THINKING 🤔
+Philosopher #1 takes the right fork
+Philosopher #0 takes the left fork
+Philosopher #1 release the right fork, can't reach it the left one 😠
+Philosopher #0 EATING 🍴
+Philosopher #1 takes the right fork
+Philosopher #4 HUNGRY 😋

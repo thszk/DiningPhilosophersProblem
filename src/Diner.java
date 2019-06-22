@@ -1,7 +1,7 @@
 import java.io.File;
 import java.io.FileInputStream;
-//import java.io.FileOutputStream;
-//import java.io.PrintStream;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
 
@@ -10,7 +10,7 @@ public class Diner {
 
         try { // sets the default I/O to the text file
             System.setIn(new FileInputStream(new File("/home/xogaiht/Code/DiningPhilosophersProblem/input.txt")));
-//            System.setOut(new PrintStream(new FileOutputStream("/home/xogaiht/Code//DiningPhilosophersProblem/output.txt", false)));
+            System.setOut(new PrintStream(new FileOutputStream("/home/xogaiht/Code//DiningPhilosophersProblem/output.txt", false)));
         } catch (Exception e) {
             System.out.println(e);
         }
@@ -18,6 +18,7 @@ public class Diner {
         // input attributes
         Scanner scanner = new Scanner(System.in);
         int qtPhilosopher;
+
         // execution attributes
         Philosopher[] philosopher;
         boolean[] fork;
@@ -29,7 +30,7 @@ public class Diner {
         // set the philosophers array and the fork array at the same value
         philosopher = new Philosopher[qtPhilosopher];
         fork = new boolean[qtPhilosopher];
-        // set semaphore permits with number of philosophers / 2 being rounded down
+        // set semaphore permits with number of philosophers divided by 2 being rounded down
         semaphore = new Semaphore(qtPhilosopher/2, true);
 
         // set all fork available
