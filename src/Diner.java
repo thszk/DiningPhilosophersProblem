@@ -9,8 +9,8 @@ public class Diner {
     public static void main(String [] args) {
 
         try { // sets the default I/O to the text file
-            System.setIn(new FileInputStream(new File("/home/xogaiht/Code/DiningPhilosophersProblem/input.txt")));
-            System.setOut(new PrintStream(new FileOutputStream("/home/xogaiht/Code//DiningPhilosophersProblem/output.txt", false)));
+            System.setIn(new FileInputStream(new File(System.getProperty("user.dir")+"/input.txt")));
+            System.setOut(new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"/output.txt", false)));
         } catch (Exception e) {
             System.out.println(e);
         }
