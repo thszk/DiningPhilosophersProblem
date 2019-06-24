@@ -1,7 +1,7 @@
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.PrintStream;
+//import java.io.File;
+//import java.io.FileInputStream;
+//import java.io.FileOutputStream;
+//import java.io.PrintStream;
 import java.util.Scanner;
 import java.util.concurrent.Semaphore;
 
@@ -9,8 +9,8 @@ public class Diner {
     public static void main(String [] args) {
 
         try { // sets the default I/O to the text file
-            System.setIn(new FileInputStream(new File(System.getProperty("user.dir")+"/input.txt")));
-            System.setOut(new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"/output.txt", false)));
+//            System.setIn(new FileInputStream(new File(System.getProperty("user.dir")+"/input.txt")));
+//            System.setOut(new PrintStream(new FileOutputStream(System.getProperty("user.dir")+"/output.txt", false)));
         } catch (Exception e) {
             System.out.println(e);
         }
